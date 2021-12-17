@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Livraria</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="clique_aqui_para_iniciar_seu_pedido">Clique aqui para iniciar seu pedido</string>
+    <string name="icone_home_description">icone_home</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="imagem_livro">imagem_livro</string>
+    <string name="quantidade_item">quantidade_item</string>
+    <string name="icone_da_pagina_de_cadastro">icone_da_pagina_de_cadastro</string>
+    <string name="cadastro_de_livros"> CADASTRO DE LIVROS </string>
+    <string name="titulo_page_cadastro"> Título </string>
+    <string name="titulo_preco_page_cadastro"> Preço </string>
+    <string name="label_upload"> Upload imagem </string>
+    <string name="button_imagem_page_cadastro"> Upload </string>
+    <string name="button_cadastrar_livro_page_cadastro"> Cadastrar livro </string>
+</resources>

@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CadastroDeLivros">
+
+    <!-- ImageView do ícone da página -->
+
+
+    <!-- Titulo da página de Cadastro de Livros -->
+    <ImageView
+        android:id="@+id/idImageViewIconePageCadastro"
+        android:layout_width="105dp"
+        android:layout_height="104dp"
+        android:layout_marginTop="28dp"
+        android:contentDescription="@string/icone_da_pagina_de_cadastro"
+        android:src="@drawable/icone_home"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/idTextViewTituloDeCadastro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="@string/cadastro_de_livros"
+        android:textAlignment="center"
+        android:textColor="@color/purple_700"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idImageViewIconePageCadastro" />
+
+
+    <!-- TextView pro cadastro do título -->
+    <TextView
+        android:id="@+id/idTextViewTituloCadastroLivro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="@string/titulo_page_cadastro"
+        android:textColor="@color/purple_700"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.005"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idTextViewTituloDeCadastro" />
+
+
+
+
+
+    <!-- Text view para título do upload do ícone do livro -->
+
+
+    <!-- Edit text para cadastro do título do livro -->
+    <EditText
+        android:id="@+id/idEditTextCadastroTituloLivro"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_weight="1"
+        android:ems="10"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idTextViewTituloCadastroLivro"
+        tools:ignore="DuplicateSpeakableTextCheck,SpeakableTextPresentCheck" />
+
+
+    <!-- TexView para título do cadastro do preço do livro -->
+    <TextView
+        android:id="@+id/idTextViewTituloCadastroPreco"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/titulo_preco_page_cadastro"
+        android:textColor="@color/purple_700"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idEditTextCadastroTituloLivro" />
+
+
+    <!-- Button para o upload do ícone do livro -->
+    <EditText
+        android:id="@+id/idEditTextCadastroPrecoLivro"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idTextViewTituloCadastroPreco"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/idTextViewTituloCadastroIconeLivro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/label_upload"
+        android:textColor="@color/purple_700"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idEditTextCadastroPrecoLivro" />
+
+    <Button
+        android:id="@+id/idButtonUploadIconeLivro"
+        android:layout_width="118dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/button_imagem_page_cadastro"
+        android:background="@color/purple_700"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idTextViewTituloCadastroIconeLivro" />
+
+
+    <!-- Botão para cadastrar o livro -->
+    <Button
+        android:id="@+id/idButtonCadastrarLivro"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:background="@color/purple_700"
+        android:text="@string/button_cadastrar_livro_page_cadastro"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idButtonUploadIconeLivro"
+        app:layout_constraintVertical_bias="1.0" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
