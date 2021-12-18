@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ListaDePedidosDeLivros">
+
+
+    <!-- ListView responsável por listar na tela os itens que foram adicionados ao carrinho do usuário -->
+    <ListView
+        android:id="@+id/idListViewListaPedidosLivros"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"/>
+
+    <!-- Button responsável por fechar o carrinho, ou seja, finalizar a compra -->
+    <Button
+        android:id="@+id/idButtonFecharCarrinho"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/black"
+        android:text="Fechar carrinho"
+        android:textColor="#FFFFFF"
+        android:orientation="horizontal"
+        android:layout_gravity="bottom"
+        android:textSize="18sp" />
+
+</FrameLayout>

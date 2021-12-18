@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="90dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp">
+
+
+    <!-- ImageView: imagemDoLivro -->
+    <ImageView
+        android:id="@+id/idIconLivro"
+        android:layout_width="30dp"
+        android:layout_height="80dp"
+        android:layout_weight="3"
+        android:src="@drawable/ic_o_andar_do_bebado"/>
+
+    <!-- TextView: tituloDoLivro -->
+    <TextView
+        android:id="@+id/idTextViewTituloDoLivro"
+        android:text="Título: "
+        android:layout_width="1dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="5"
+        android:layout_marginLeft="10dp"
+        android:layout_gravity="center_vertical" />
+
+    <!-- TextView: precoDoLivro -->
+    <TextView
+        android:id="@+id/idTextViewPrecoDoLivro"
+        android:text="Preço: "
+        android:layout_width="1dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:layout_gravity="center_vertical"/>
+
+</LinearLayout>
