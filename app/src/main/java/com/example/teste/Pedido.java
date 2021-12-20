@@ -44,6 +44,7 @@ public class Pedido extends AppCompatActivity {
         quantidade.setText(String.valueOf(pedidos.QuantidadeTotal()));
         valor.setText("R$ " + String.format("%.2f", pedidos.valorTotal()).replace(".",","));
 
+
         radioGroup = findViewById(R.id.idRadioGroup);
         formaDePagamento = findViewById(R.id.idTextViewRespostaFormaPagamento);
         fecharPedido = findViewById(R.id.idButtonFecharPedido);
