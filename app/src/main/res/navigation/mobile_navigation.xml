@@ -11,11 +11,11 @@
         android:label="@string/menu_home"
         tools:layout="@layout/fragment_home" >
         <action
-            android:id="@+id/action_nav_home_to_itensLivros"
-            app:destination="@id/itensLivros" />
-        <action
             android:id="@+id/action_nav_home_to_nav_gallery"
             app:destination="@id/nav_gallery" />
+        <action
+            android:id="@+id/action_nav_home_to_teste"
+            app:destination="@id/teste" />
     </fragment>
 
     <fragment
@@ -29,8 +29,9 @@
         android:name="com.example.teste.ui.slideshow.SlideshowFragment"
         android:label="@string/menu_historico"
         tools:layout="@layout/fragment_slideshow" />
-    <fragment
-        android:id="@+id/itensLivros"
-        android:name="com.example.teste.ItensLivros"
-        android:label="ItensLivros" />
+    <activity
+        android:id="@+id/teste"
+        android:name="com.example.teste.Teste"
+        android:label="fragment_teste"
+        tools:layout="@layout/fragment_teste" />
 </navigation>

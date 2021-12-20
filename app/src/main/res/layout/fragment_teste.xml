@@ -3,17 +3,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ResumoPedido">
+    tools:context=".Teste">
 
-
-
-
-
-    <Button
-        android:id="@+id/idButtonTelaInicial"
+    <!-- ListView responsável por mostrar na tela a lista de itens que foram adicionados ao carrinho
+        pelo usuário. -->
+    <ListView
+        android:id="@+id/idlistViewMain"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@color/purple_700"
-        android:text="Tela Inicial" />
+        android:layout_height="0dp"
+        android:layout_weight="1" />
 
 </FrameLayout>

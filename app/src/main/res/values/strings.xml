@@ -24,4 +24,6 @@
     <string name="label_upload"> Upload imagem </string>
     <string name="button_imagem_page_cadastro"> Upload </string>
     <string name="button_cadastrar_livro_page_cadastro"> Cadastrar livro </string>
+    <string name="forma_de_pagamento">Forma de Pagamento</string>
+    <string name="endereco_de_entrega">Endereço de Entrega</string>
 </resources>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Botão de carrinho de compras -->
+    <item
+        android:id="@+id/idButtonCarrinhoCompras"
+        android:icon="@drawable/ic_carrinho_compras"
+        android:title="Books"
+        app:showAsAction="ifRoom" />
+
+</menu>

@@ -60,7 +60,7 @@ public class HomeFragment extends Fragment {
         iniciarPedido.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                navController.navigate(R.id.action_nav_home_to_itensLivros);
+                navController.navigate(R.id.action_nav_home_to_teste);
             }
         });
 

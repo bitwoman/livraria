@@ -1,64 +1,37 @@
 package com.example.teste;
 
+import android.content.Intent;
 import android.os.Bundle;
 
+import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ListView;
+import android.widget.TextView;
 
-/**
- * A simple {@link Fragment} subclass.
- * Use the {@link Pedido#newInstance} factory method to
- * create an instance of this fragment.
- */
-public class Pedido extends Fragment {
-
-    // TODO: Rename parameter arguments, choose names that match
-    // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-    private static final String ARG_PARAM1 = "param1";
-    private static final String ARG_PARAM2 = "param2";
-
-    // TODO: Rename and change types of parameters
-    private String mParam1;
-    private String mParam2;
-
-    public Pedido() {
-        // Required empty public constructor
-    }
-
-    /**
-     * Use this factory method to create a new instance of
-     * this fragment using the provided parameters.
-     *
-     * @param param1 Parameter 1.
-     * @param param2 Parameter 2.
-     * @return A new instance of fragment Pedido.
-     */
-    // TODO: Rename and change types and number of parameters
-    public static Pedido newInstance(String param1, String param2) {
-        Pedido fragment = new Pedido();
-        Bundle args = new Bundle();
-        args.putString(ARG_PARAM1, param1);
-        args.putString(ARG_PARAM2, param2);
-        fragment.setArguments(args);
-        return fragment;
-    }
+public class Pedido extends AppCompatActivity {
 
     @Override
-    public void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        if (getArguments() != null) {
-            mParam1 = getArguments().getString(ARG_PARAM1);
-            mParam2 = getArguments().getString(ARG_PARAM2);
-        }
+        setContentView(R.layout.fragment_pedido);
+
+        Intent it = this.getIntent();
+        Pedidos pedidos = (Pedidos) it.getSerializableExtra("pedido");
+
+        final ItemAdapter adaptador = new ItemAdapter(this, pedidos.itemPedidosLivros);
+
+        ListView listView = (ListView) findViewById(R.id.idListViewPedido);
+        listView.setAdapter(adaptador);
+
+        TextView quantidade = (TextView) findViewById(R.id.idTextViewTotalDePedidos);
+        TextView valor = (TextView) findViewById(R.id.idTextViewValorTotalDoPedido);
+
+        quantidade.setText(String.valueOf(pedidos.QuantidadeTotal()));
+        valor.setText("R$ " + String.format("%.2f", pedidos.valorTotal()).replace(".",","));
     }
 
-    @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_pedido, container, false);
-    }
 }

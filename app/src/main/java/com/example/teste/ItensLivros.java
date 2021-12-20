@@ -16,8 +16,12 @@ import java.util.List;
  * ******* PRODUTO QUE SERÁ VENDIDO *******
  * Itens que poderão ser adicionados ao carrinho
  */
-
+//
 public class ItensLivros extends Fragment implements Serializable {
+
+    public ItensLivros() {
+
+    }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -35,9 +39,9 @@ public class ItensLivros extends Fragment implements Serializable {
      * CONSTRUTOR
      * Necessário iniciá-lo vazio
      */
-    public ItensLivros(){
+    /*public ItensLivros(){
 
-    }
+    }*/
 
     /*
      * ******* CONSTRUTOR *******
