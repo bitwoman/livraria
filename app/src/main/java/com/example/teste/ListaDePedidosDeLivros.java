@@ -33,7 +33,7 @@ public class ListaDePedidosDeLivros extends AppCompatActivity {
         final ListView listaDePedidos = (ListView) findViewById(R.id.idListViewListaPedidosLivros);
         listaDePedidos.setAdapter(adaptador);
 
-        buttonFecharPedido = (Button) findViewById(R.id.idButtonFecharCarrinho);
+        //buttonFecharPedido = (Button) findViewById(R.id.idButtonFecharCarrinho);
 
         buttonFecharPedido.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -16,6 +16,9 @@
         <action
             android:id="@+id/action_nav_home_to_teste"
             app:destination="@id/teste" />
+        <action
+            android:id="@+id/action_nav_home_to_nav_slideshow"
+            app:destination="@id/nav_slideshow" />
     </fragment>
 
     <fragment
@@ -34,4 +37,9 @@
         android:name="com.example.teste.Teste"
         android:label="fragment_teste"
         tools:layout="@layout/fragment_teste" />
+    <fragment
+        android:id="@+id/historico"
+        android:name="com.example.teste.Historico"
+        android:label="fragment_historico"
+        tools:layout="@layout/fragment_historico" />
 </navigation>

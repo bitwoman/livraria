@@ -45,8 +45,6 @@
         android:gravity="start"
         android:textColor="@color/black" />
 
-
-    <!-- Imagem (botão) para atualizar o produto -->
     <ImageView
         android:id="@+id/idImagemAtualizar"
         android:layout_width="wrap_content"
@@ -56,10 +54,8 @@
         android:layout_marginEnd="20dp"
         android:layout_marginBottom="10dp"
         android:layout_weight="1"
-        android:src="@android:drawable/ic_input_add" />
+        android:src="@android:drawable/ic_menu_edit" />
 
-
-    <!-- Imagem (botão) para excluir o produto -->
     <ImageView
         android:id="@+id/idImagemExcluir"
         android:layout_width="wrap_content"
@@ -69,5 +65,6 @@
         android:layout_marginEnd="20dp"
         android:layout_marginBottom="10dp"
         android:layout_weight="1"
-        android:src="@android:drawable/ic_delete" />
+        android:src="@android:drawable/ic_menu_delete" />
+
 </LinearLayout>

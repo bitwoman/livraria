@@ -123,5 +123,11 @@
         android:background="@color/purple_700"
         android:text="Fechar Pedido" />
 
+    <!-- NumberPicker: idNumberPickerQuantidadeItem-->
+    <NumberPicker
+        android:id="@+id/idNumberPickerQuantidadeItem"
+        android:layout_width="1dp"
+        android:layout_height="80dp"
+        android:layout_weight="1" />
 
 </LinearLayout>
