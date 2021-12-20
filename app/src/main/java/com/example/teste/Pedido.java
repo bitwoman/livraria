@@ -9,10 +9,21 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ListView;
+import android.widget.RadioButton;
+import android.widget.RadioGroup;
 import android.widget.TextView;
 
 public class Pedido extends AppCompatActivity {
+
+    /*
+     * ATRIBUTOS
+     */
+    RadioGroup radioGroup;
+    RadioButton radioButton;
+    TextView formaDePagamento;
+    Button fecharPedido;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,6 +43,25 @@ public class Pedido extends AppCompatActivity {
 
         quantidade.setText(String.valueOf(pedidos.QuantidadeTotal()));
         valor.setText("R$ " + String.format("%.2f", pedidos.valorTotal()).replace(".",","));
+
+        radioGroup = findViewById(R.id.idRadioGroup);
+        formaDePagamento = findViewById(R.id.idTextViewRespostaFormaPagamento);
+        fecharPedido = findViewById(R.id.idButtonFecharPedido);
+
+        fecharPedido.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
+    }
+
+    public void checkRadioBox(View v){
+        int idRadioGroup = radioGroup.getCheckedRadioButtonId();
+        radioButton = findViewById(idRadioGroup);
+
+        formaDePagamento.setText(radioButton.getText());
+
     }
 
 }

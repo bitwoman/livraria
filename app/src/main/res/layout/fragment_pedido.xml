@@ -70,6 +70,7 @@
         android:text="@string/forma_de_pagamento" />
 
     <RadioGroup
+        android:id="@+id/idRadioGroup"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
@@ -80,7 +81,8 @@
             android:onClick="checkButton"
             android:text="Dinheiro"
             android:textColor="@color/black"
-            android:textSize="20dp"></RadioButton>
+            android:textSize="20dp"
+            android:checked="true"></RadioButton>
 
         <RadioButton
             android:id="@+id/idRadioButtonCartaoDeCredito"
